@@ -43,7 +43,7 @@ task :build do
 end
  
 task :install_gem => :build do
-  `sudo gem install *.gem --no-ri --no-rdoc`
+  `gem install *.gem --no-ri --no-rdoc`
 end
 
 task :default => :build
